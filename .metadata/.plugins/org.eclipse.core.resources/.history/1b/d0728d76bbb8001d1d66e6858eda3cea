@@ -1,0 +1,25 @@
+package day01;
+
+public class OpTest {
+
+	public static void main(String[] args) {
+		int a = 100;
+		int b = 3;
+		
+		System.out.println("a+b: " + a+b);	// 1003
+		System.out.println("a+b: " + String.valueOf(a+b));	// 103
+		System.out.println("a-b:" + String.valueOf(a-b));
+		System.out.println("a*b: " + a*b);	// 300
+		System.out.println("a/b: " + a/b);	// 33
+		System.out.println("a%b: " + a%b);	// 1
+		System.out.println("a++: " + a++);	// 100
+		System.out.println("a : " + a);		// 101
+		System.out.println("b++: " + b++);	// 3
+		System.out.println("b : " + b);		// 4
+		
+//		System.out.println("a>b: " + a>b);
+		System.out.println(a>b && --a>1000);
+
+	}
+
+}

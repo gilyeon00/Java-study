@@ -1,0 +1,14 @@
+package day01;
+
+public class DataTypeTest {
+
+	public static void main(String[] args) {
+		int i = 300;
+		long a = 30L;	// 30
+		a = i;	// 자동 형변환 :큰사이즈에 작은 사이즈 넣기만 가능
+		// ex. 실수에 정수 넣기 
+		float b=3.4F;
+		System.out.println(a);
+	}
+
+}
