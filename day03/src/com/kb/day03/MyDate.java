@@ -19,6 +19,13 @@ public class MyDate {
 		System.out.println(year + "년 " + month + "월 " + day + "일 ");
 	}
 	
+//	public MyDate(int year, int month, int day) {
+//		this.year = year;
+//		this.month = month;
+//		this.day = month;
+//		System.out.println(year + "년 " + month + "월 " + day + "일 ");
+//	}
+	
 	public MyDate(int m, int d) {
 		year = 1990;
 		month = m;
