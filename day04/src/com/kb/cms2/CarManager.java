@@ -37,6 +37,19 @@ public class CarManager {
 	}
 	
 	// 삭제
-	
+	public void deleteCar(String num) {
+		Car c = searchCar(num);
+		if(c != null) {
+			carList.remove(c);
+			System.out.println(c +"가 삭제되었습니다.");
+		}
+//		for(Car c :carList) {
+//			if(c.num.equals(num)) {
+//				carList.remove(c);
+//				System.out.println(c +"가 삭제되었습니다.");
+//				break;
+//			}
+//		}
+	}
 	
 }

@@ -10,7 +10,14 @@ public class Test {
 		carManager.saveCar(new Bus("2551", 6500, 50));
 		carManager.saveCar(new Bus("0452", 8800, 70));
 		carManager.saveCar(new Bus("8557", 4800, 30));
+		
 		carManager.searchCar();
+		System.out.println();
+		
+		carManager.deleteCar("1233");
+		System.out.println();
+		carManager.searchCar();
+		
 	}
 
 }
