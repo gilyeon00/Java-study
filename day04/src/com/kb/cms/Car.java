@@ -1,7 +1,7 @@
 package com.kb.cms;
 
 public abstract class Car {
-	String num;
+	public String num;
 	int price;
 	
 	public void drive() {

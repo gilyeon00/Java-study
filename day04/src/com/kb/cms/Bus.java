@@ -3,6 +3,15 @@ package com.kb.cms;
 public class Bus extends Car implements Door{
 	int seat;
 	
+	
+	public Bus() {}
+	public Bus(String num, int price, int seat) {
+		this.num = num; // this에 없으면 super로 감
+		this.price = price;
+		this.seat = seat;
+	}
+	
+	
 	public void autoDoor(boolean flag) {
 		if(flag)
 			System.out.println("Opened door");
