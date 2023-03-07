@@ -1,6 +1,6 @@
 package com.kb.cms;
 
-public class Car {
+public abstract class Car {
 	String num;
 	int price;
 	
