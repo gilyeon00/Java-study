@@ -23,8 +23,8 @@ public class EvenOddSm {
 				
 				for(int k=0; k<4; k++) {
 					
-					int nx = i + dx[k];
-					int ny = j + dy[k];
+					int ny = i + dx[k];
+					int nx = j + dy[k];
 					
 					if(nx < 0 || nx >= numArr.length) {
 						continue;
@@ -39,6 +39,7 @@ public class EvenOddSm {
 				
 				if(tmp% 2 == 0) {
 					sum += tmp;
+					cnt ++;
 					System.out.println(tmp + " " + sum);
 				}
 				System.out.println();
