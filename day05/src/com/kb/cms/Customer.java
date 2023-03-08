@@ -1,6 +1,6 @@
 package com.kb.cms;
 
-public class Customer {
+public class Customer implements Comparable<Customer> {
 	int num;
 	String name;
 	String address;
@@ -28,6 +28,11 @@ public class Customer {
 		builder.append(address);
 		builder.append("]");
 		return builder.toString();
+	}
+
+	@Override
+	public int compareTo(Customer o) {
+		return this.name.compareTo(o.name);
 	}
 	
 }

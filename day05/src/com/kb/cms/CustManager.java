@@ -1,6 +1,7 @@
 package com.kb.cms;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -22,6 +23,7 @@ public class CustManager implements ICustManager {
 		}
 	}
 	
+	
 	// 상세검색
 	@Override
 	public Customer searchCustomer(int num) {
@@ -35,6 +37,16 @@ public class CustManager implements ICustManager {
 		
 		return resultCustomer;
 	}
+	
+	
+	public void searchSortedCustomer() {
+		Collections.sort(customer, new MyComparator("주소"));
+		for(Customer c: customer) {
+			System.out.println(c); 
+		}
+	}
+	
+	
 	
 	// 고객 주소 수정
 	@Override
