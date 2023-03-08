@@ -4,16 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class CustManager {
+public class CustManager implements ICustManager {
 	List<Customer> customer = new ArrayList<>();
 	
 	// 저장
+	@Override
 	public void saveCustomer(Customer c) {
 		customer.add(c);
 		
 	}
 	
 	// 검색
+	@Override
 	public void searchCustomer() {
 		for(Customer c : customer) {
 			System.out.println(c);
@@ -21,6 +23,7 @@ public class CustManager {
 	}
 	
 	// 상세검색
+	@Override
 	public Customer searchCustomer(int num) {
 		Customer resultCustomer = null;
 		for(Customer c : customer) {
@@ -34,6 +37,7 @@ public class CustManager {
 	}
 	
 	// 고객 주소 수정
+	@Override
 	public void updateCustomer(int num, String address) {
 		Customer c = searchCustomer(num);
 		
@@ -44,6 +48,7 @@ public class CustManager {
 	}
 	
 	//삭제
+	@Override
 	public void deleteCustomer(int num) {
 		Customer c = searchCustomer(num);
 		
